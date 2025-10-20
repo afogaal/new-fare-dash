@@ -37,13 +37,13 @@ export function AddFareCard({
             type="number"
             min="0"
             step="0.01"
-            className="flex-1"
+            className="w-[60%]"
             disabled={disabled}
           />
           <Button
             onClick={onAddFare}
             disabled={disabled}
-            className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            className="w-[40%] bg-primary hover:bg-primary/90 text-primary-foreground"
           >
             <Plus className="h-4 w-4 mr-2" />
             Add

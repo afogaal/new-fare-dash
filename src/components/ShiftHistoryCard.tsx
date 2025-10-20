@@ -64,7 +64,7 @@ export function ShiftHistoryCard({
                       <span>{h.trips} trips</span>
                       <span>•</span>
                       <span className="font-semibold text-primary">
-                        ${h.earnings.toFixed(2)}
+                        {h.earnings.toFixed(2)} kr
                       </span>
                     </div>
                   </div>

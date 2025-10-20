@@ -93,7 +93,7 @@ function TaxiTrackerContent() {
       currentShift: null,
       history: [shiftRecord, ...s.history],
     }));
-    toast.success(`Shift ended! Earned $${earnings.toFixed(2)}`);
+    toast.success(`Shift ended! Earned ${earnings.toFixed(2)} kr`);
   }, [state.currentShift]);
 
   const cancelShift = useCallback(() => {
@@ -130,7 +130,7 @@ function TaxiTrackerContent() {
       };
     });
     setFareInput("");
-    toast.success(`Fare added: $${fare.toFixed(2)}`);
+    toast.success(`Fare added: ${fare.toFixed(2)} kr`);
   }, [state.currentShift, fareInput]);
 
   const editFare = useCallback((fare: Fare) => {
