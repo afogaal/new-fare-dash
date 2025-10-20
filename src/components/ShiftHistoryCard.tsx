@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShiftHistory } from "@/types/tracker";
-import { formatDate, formatTimeOnly } from "@/utils/timeUtils";
+import { formatDate, formatTimeOnly, secondsToHM } from "@/utils/timeUtils";
 import { Download, Trash2, History } from "lucide-react";
 
 interface ShiftHistoryCardProps {
@@ -59,7 +59,7 @@ export function ShiftHistoryCard({
                       </span>
                     </div>
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span>{(h.seconds / 3600).toFixed(2)} hrs</span>
+                      <span>{secondsToHM(h.seconds)}</span>
                       <span>•</span>
                       <span>{h.trips} trips</span>
                       <span>•</span>
