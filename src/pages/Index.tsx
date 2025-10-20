@@ -257,7 +257,7 @@ function TaxiTrackerContent() {
 
         {/* Shift History */}
         <ShiftHistoryCard
-          history={state.history}
+          history={[...state.history].sort((a, b) => b.startTs - a.startTs)}
           onExportCSV={handleExportCSV}
           onClearHistory={clearHistory}
           onDeleteShift={deleteShift}
