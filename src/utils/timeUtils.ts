@@ -15,5 +15,5 @@ export function formatDate(ts: number): string {
 }
 
 export function formatTimeOnly(ts: number): string {
-  return new Date(ts).toLocaleTimeString();
+  return new Date(ts).toLocaleTimeString([], { hour12: false });
 }

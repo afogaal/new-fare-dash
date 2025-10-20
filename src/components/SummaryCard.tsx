@@ -74,7 +74,7 @@ export function SummaryCard({
                       {fare.amount.toFixed(2)} kr
                     </span>
                     <span className="text-muted-foreground">
-                      {new Date(fare.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                      {new Date(fare.timestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: false})}
                     </span>
                     <div className="flex gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity ml-1">
                       <Button
