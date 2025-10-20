@@ -1,6 +1,6 @@
 export function formatTime(ts: number): string {
   const d = new Date(ts);
-  return d.toLocaleString();
+  return d.toLocaleString([], { hour12: false });
 }
 
 export function secondsToHMS(s: number): string {
